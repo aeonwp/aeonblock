@@ -1,4 +1,4 @@
-=== Aeon Blog ===
+=== Aeon Block ===
 Contributors: aeontheme
 Requires at least: 5.0
 Tested up to: 5.7
