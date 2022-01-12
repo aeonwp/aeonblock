@@ -50,7 +50,7 @@ function aeonblock_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'aeonblock-accent-color',
 		array(
-			'default'           => '#021634',
+			'default'           => '#024eb9',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -70,7 +70,7 @@ function aeonblock_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'aeonblock-button-color',
 		array(
-			'default'           => '#4ea371',
+			'default'           => '#024eb9',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -267,7 +267,7 @@ function aeonblock_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'aeonblock-font-size',
 		array(
-			'default'           => 18,
+			'default'           => 14,
 			'transport'         => 'refresh',
 			'sanitize_callback' => 'aeonblock_sanitize_number',
 		)

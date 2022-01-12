@@ -22,13 +22,13 @@ if ( ! function_exists( 'aeonblock_dynamic_css' ) ) {
 
 		/* Get and escape theme options */
 		$aeonblock_body_font           = esc_attr( get_theme_mod( 'aeonblock_body_font', 'Open Sans' ) );
-		$aeonblock_title_font          = esc_attr( get_theme_mod( 'aeonblock_title_font', 'Josefin Sans' ) );
-		$aeonblock_font_size           = absint( get_theme_mod( 'aeonblock-font-size', 18 ) );
+		$aeonblock_title_font          = esc_attr( get_theme_mod( 'aeonblock_title_font', 'Manrope' ) );
+		$aeonblock_font_size           = absint( get_theme_mod( 'aeonblock-font-size', 14 ) );
 		$aeonblock_font_line_height    = esc_attr( get_theme_mod( 'aeonblock-font-line-height', 2 ) );
 		$aeonblock_font_letter_spacing = absint( get_theme_mod( 'aeonblock-letter-spacing', 0 ) );
 		$aeonblock_about_gravatar      = esc_attr( get_theme_mod( 'aeonblock-about-gravatar', 'circle' ) );
-		$aeonblock_accent_color        = esc_attr( get_theme_mod( 'aeonblock-accent-color', '#021634' ) );
-		$aeonblock_button_color        = esc_attr( get_theme_mod( 'aeonblock-button-color', '#4ea371' ) );
+		$aeonblock_accent_color        = esc_attr( get_theme_mod( 'aeonblock-accent-color', '#000c29' ) );
+		$aeonblock_button_color        = esc_attr( get_theme_mod( 'aeonblock-button-color', '#54d6eb' ) );
 		$custom_css                   = '';
 
 		/* Typography Section */
@@ -39,6 +39,14 @@ if ( ! function_exists( 'aeonblock_dynamic_css' ) ) {
 
 		if ( ! empty( $aeonblock_title_font ) ) {
 			$custom_css .= ".site-title { font-family: '{$aeonblock_title_font}', BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }";
+		}
+
+		if ( ! empty( $aeonblock_title_font ) ) {
+			$custom_css .= "h1, h2, h3, h4, h5, h6{ font-family: '{$aeonblock_title_font}', BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }";
+		}
+		
+		if ( ! empty( $aeonblock_title_font ) ) {
+			$custom_css .= ".main-navigation a{ font-family: '{$aeonblock_title_font}', BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }";
 		}
 
 		if ( ! empty( $aeonblock_font_size ) ) {

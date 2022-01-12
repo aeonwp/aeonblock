@@ -21,13 +21,15 @@ get_sidebar( 'left' );
 
 ?>
 <main id="primary" role="main">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( '404: Not Found', 'aeonblock' ); ?></h1>
-	</header>
-	<article <?php post_class( 'post-wrapper' ); ?>>
-		<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'aeonblock' ); ?></p>
-		<?php get_search_form(); ?>
-	</article>
+    <div class="single-blog-post">
+    	<header class="page-header">
+    		<h1 class="page-title"><?php esc_html_e( '404: Not Found', 'aeonblock' ); ?></h1>
+    	</header>
+    	<article <?php post_class( 'post-wrapper' ); ?>>
+    		<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'aeonblock' ); ?></p>
+    		<?php get_search_form(); ?>
+    	</article>
+    </div>
 </main><!-- #primary -->
 <?php
 get_sidebar();

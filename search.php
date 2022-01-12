@@ -19,42 +19,44 @@ get_sidebar( 'left' );
 
 ?>
 	<main id="primary" role="main">
-	<?php
-	if ( have_posts() ) {
-		?>
-		<div class="search-title-box">
-			<h1 class="page-title">
+		<div class="single-blog-post">
 			<?php
-			/* translators: %s: search query. */
-			printf( esc_html__( 'Search Results for: %s', 'aeonblock' ), '<span>' . get_search_query() . '</span>' );
+			if ( have_posts() ) {
+				?>
+				<div class="search-title-box">
+					<h1 class="page-title">
+					<?php
+					/* translators: %s: search query. */
+					printf( esc_html__( 'Search Results for: %s', 'aeonblock' ), '<span>' . get_search_query() . '</span>' );
+					?>
+					</h1>
+				</div>
+				<?php
+				/* Start the Loop */
+				while ( have_posts() ) {
+					the_post();
+
+					/**
+					 * Run the loop for the search to output the results.
+					 * If you want to overload this in a child theme then include a file
+					 * called content-search.php and that will be used instead.
+					*/
+					get_template_part( 'template-parts/content' );
+				}
+					/**
+					 * AeonBlock_post_navigation hook.
+					 *
+					 * @since AeonBlock 1.0.0
+					 *
+					 * @hooked aeonblock_posts_navigation -  10
+					 */
+					do_action( 'aeonblock_action_navigation' );
+
+			} else {
+				get_template_part( 'template-parts/content', 'none' );
+			}
 			?>
-			</h1>
 		</div>
-		<?php
-		/* Start the Loop */
-		while ( have_posts() ) {
-			the_post();
-
-			/**
-			 * Run the loop for the search to output the results.
-			 * If you want to overload this in a child theme then include a file
-			 * called content-search.php and that will be used instead.
-			*/
-			get_template_part( 'template-parts/content' );
-		}
-			/**
-			 * AeonBlock_post_navigation hook.
-			 *
-			 * @since AeonBlock 1.0.0
-			 *
-			 * @hooked aeonblock_posts_navigation -  10
-			 */
-			do_action( 'aeonblock_action_navigation' );
-
-	} else {
-		get_template_part( 'template-parts/content', 'none' );
-	}
-	?>
 	</main><!-- #primary -->
 <?php
 get_sidebar();

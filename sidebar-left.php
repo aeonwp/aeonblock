@@ -18,8 +18,10 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <aside role="complementary" class="secondary left-sidebar">
+    <div class="blog-sidebar">
 	<?php
 	aeonblock_about_user();
 	dynamic_sidebar( 'sidebar-1' );
 	?>
+</div>
 </aside><!-- #secondary -->

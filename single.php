@@ -25,12 +25,68 @@ get_sidebar( 'left' );
 
 			get_template_part( 'template-parts/content', 'single' );
 
-			the_post_navigation(
-				array(
-					'prev_text' => __( '&laquo;', 'aeonblock' ) . ' %title',
-					'next_text' => '%title ' . __( '&raquo;', 'aeonblock' ),
-				)
-			);
+			?>
+			<div class="custom-post-pagination">
+				<?php
+				    $prevPost = get_previous_post(true);
+				    if ($prevPost) {
+				        $args = [
+				            'posts_per_page' => 1,
+				            'include' => $prevPost->ID,
+				        ];
+				        $prevPost = get_posts($args);
+				        foreach ($prevPost as $post) {
+				            setup_postdata($post); ?>
+								<div class="previous-post">
+									<div class="blog-pagination-post">
+										<div class="post-thumb">
+										<a href="<?php the_permalink(); ?>">
+											<?php echo aeonblock_get_svg( array( 'icon' => 'arrow-left' ) ); ?>
+											<?php the_post_thumbnail('thumbnail'); ?>
+										</a>
+										</div>
+										<div class="post-content">
+											<h4 class="title">
+												<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+											</h4>
+											<span class="date"><?php the_date('F j, Y'); ?></span>
+										</div>
+									</div>
+								</div>
+							<?php wp_reset_postdata();
+				        } //end foreach
+				    } // end if
+
+				    $nextPost = get_next_post(true);
+				    if ($nextPost) {
+				        $args = [
+				            'posts_per_page' => 1,
+				            'include' => $nextPost->ID,
+				        ];
+				        $nextPost = get_posts($args);
+				        foreach ($nextPost as $post) {
+				            setup_postdata($post); ?>
+								<div class="next-post">
+									<div class="blog-pagination-post">
+										<div class="post-content">
+											<h4 class="title">
+												<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+											</h4>
+											<span><?php the_date('F j, Y'); ?></span>
+										</div>
+										<div class="post-thumb">
+											<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?>
+												<?php echo aeonblock_get_svg( array( 'icon' => 'arrow-right' ) ); ?>
+											</a>
+										</div>
+									</div>
+								</div>
+								<?php wp_reset_postdata();
+				        } //end foreach
+				    }// end if
+				?>
+			</div>
+			<?php
 
 			/**
 			* AeonBlock_related_posts hook
@@ -48,6 +104,7 @@ get_sidebar( 'left' );
 		} // End of the loop.
 		?>
 	</main><!-- #primary -->
+
 <?php
 get_sidebar();
 
