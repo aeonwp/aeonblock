@@ -23,7 +23,7 @@ if ( ! function_exists( 'aeonblock_dynamic_css' ) ) {
 		/* Get and escape theme options */
 		$aeonblock_body_font           = esc_attr( get_theme_mod( 'aeonblock_body_font', 'Open Sans' ) );
 		$aeonblock_title_font          = esc_attr( get_theme_mod( 'aeonblock_title_font', 'Manrope' ) );
-		$aeonblock_font_size           = absint( get_theme_mod( 'aeonblock-font-size', 14 ) );
+		$aeonblock_font_size           = absint( get_theme_mod( 'aeonblock-font-size', 16 ) );
 		$aeonblock_font_line_height    = esc_attr( get_theme_mod( 'aeonblock-font-line-height', 2 ) );
 		$aeonblock_font_letter_spacing = absint( get_theme_mod( 'aeonblock-letter-spacing', 0 ) );
 		$aeonblock_about_gravatar      = esc_attr( get_theme_mod( 'aeonblock-about-gravatar', 'circle' ) );
@@ -51,7 +51,7 @@ if ( ! function_exists( 'aeonblock_dynamic_css' ) ) {
 
 		if ( ! empty( $aeonblock_font_size ) ) {
 			$custom_css .= "body, input { font-size: {$aeonblock_font_size}px; }";
-			if ( 14 == $aeonblock_font_size ) {
+			if ( 16 == $aeonblock_font_size ) {
 				$custom_css .= '.widget_search .search-form .search-field { height: 46px; } ';
 			}
 		}

@@ -267,7 +267,7 @@ function aeonblock_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'aeonblock-font-size',
 		array(
-			'default'           => 14,
+			'default'           => 16,
 			'transport'         => 'refresh',
 			'sanitize_callback' => 'aeonblock_sanitize_number',
 		)
@@ -281,7 +281,7 @@ function aeonblock_customize_register( $wp_customize ) {
 			'type'        => 'number',
 			'description' => __( 'Increase/Decrease the base font size.', 'aeonblock' ),
 			'input_attrs' => array(
-				'min'  => 14,
+				'min'  => 16,
 				'step' => 1,
 			),
 		)

@@ -1464,7 +1464,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .widget a {
 	color: #6f6f6f;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 400;
 	color: #29303c;
 	transition: all 0.3s linear;
@@ -1477,7 +1477,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .widget_recent_entries ul li a {
 	display: initial;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     color: #29303c;
     transition: all 0.3s linear;
@@ -1978,7 +1978,6 @@ object {
 .site-footer .site-info {
 	margin-top: 1.5em;
 	text-align: center;
-	font-size: 0.778em;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   color: #c4c5c7;
@@ -2226,6 +2225,7 @@ object {
 	-o-transition: 500ms;
 	transition: 500ms;
 	background: #000;
+  box-shadow: 0 5px 10px #002c6a;
 }
 
 #toTop:hover {
@@ -2248,6 +2248,7 @@ object {
 .gotop .icon.icon-angle-double-up {
     width: 0.8em;
     height: 1em;
+    margin: 5px 0;
 }
 
 /*==============================
@@ -2992,7 +2993,7 @@ object {
 }
 
 .blog-details-post .single-blog .blog-content p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px;
   display: block;
   margin-bottom: 30px;
@@ -3457,6 +3458,12 @@ object {
   margin-top: 25px;
   font-size: 16px;
   padding: 0 40px;
+}
+
+/*WP BLOCKS*/
+.wp-block-cover__inner-container p {
+    line-height: normal!important;
+    color: #fff!important;
 }
 
 
