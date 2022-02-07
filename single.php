@@ -49,7 +49,7 @@ get_sidebar( 'left' );
 											<h4 class="title">
 												<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 											</h4>
-											<span class="date"><?php the_date('F j, Y'); ?></span>
+											<span class="date"><?php echo get_the_date('F j, Y'); ?></span>
 										</div>
 									</div>
 								</div>
@@ -72,7 +72,7 @@ get_sidebar( 'left' );
 											<h4 class="title">
 												<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 											</h4>
-											<span><?php the_date('F j, Y'); ?></span>
+											<span class="date"><?php echo get_the_date('F j, Y'); ?></span>
 										</div>
 										<div class="post-thumb">
 											<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?>
