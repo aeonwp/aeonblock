@@ -27,8 +27,8 @@ if ( ! function_exists( 'aeonblock_dynamic_css' ) ) {
 		$aeonblock_font_line_height    = esc_attr( get_theme_mod( 'aeonblock-font-line-height', 2 ) );
 		$aeonblock_font_letter_spacing = absint( get_theme_mod( 'aeonblock-letter-spacing', 0 ) );
 		$aeonblock_about_gravatar      = esc_attr( get_theme_mod( 'aeonblock-about-gravatar', 'circle' ) );
-		$aeonblock_accent_color        = esc_attr( get_theme_mod( 'aeonblock-accent-color', '#000c29' ) );
-		$aeonblock_button_color        = esc_attr( get_theme_mod( 'aeonblock-button-color', '#54d6eb' ) );
+		$aeonblock_accent_color        = esc_attr( get_theme_mod( 'aeonblock-accent-color', '#024eb9' ) );
+		$aeonblock_button_color        = esc_attr( get_theme_mod( 'aeonblock-button-color', '#024eb9' ) );
 		$custom_css                   = '';
 
 		/* Typography Section */
