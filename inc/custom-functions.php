@@ -217,7 +217,7 @@ if ( ! function_exists( 'aeonblock_related_post' ) ) {
 								<?php
 							}
 							?>
-							<p class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+							<h4 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 						</li>
 						<?php
 					}
