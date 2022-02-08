@@ -73,8 +73,8 @@ final class AeonBlock_Customize {
 				$manager,
 				'aeonblock_plus',
 				array(
-					'pro_text2' => esc_html__( 'Unlock more features with Plus', 'aeonblock' ),
-					'pro_url2'  => 'https://aeonwp.com/aeonblock-plus/',
+					'pro_text2' => esc_html__( 'View Details', 'aeonblock' ),
+					'pro_url2'  => 'https://aeonwp.com/aeonblock/',
 					'pro_text'  => esc_html__( 'Rate this theme', 'aeonblock' ),
 					'pro_url'   => 'https://wordpress.org/support/theme/aeonblock/reviews/#new-post',
 					'priority' => '1',
