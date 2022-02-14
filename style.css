@@ -1723,7 +1723,7 @@ p.comment-form-cookies-consent {
 
 .comments-wrapper .comment-author a,
 .comments-wrapper .comment-author .fn {
-	text-decoration: none;
+	text-decoration: none; 
 }
 
 .comments-wrapper .comment-author a:focus,
