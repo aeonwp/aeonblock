@@ -48,6 +48,9 @@ if ( ! function_exists( 'aeonblock_setup' ) ) {
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		// Navigation Widgets
+		add_theme_support( 'html5', array( 'navigation-widgets' ) );
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(

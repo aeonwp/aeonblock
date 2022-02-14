@@ -51,6 +51,9 @@ We would love to hear your ideas.
 You can use email us at aeonwpofficial@gmail.com
 
 == Changelog ==
+= 1.0.1 - February 14 2022 =
+* Fixed Accessibility requirements 
+
 = 1.0.0 - February 08 2022 =
 * Initial release
 

@@ -46,9 +46,9 @@ get_sidebar( 'left' );
 										</a>
 										</div>
 										<div class="post-content">
-											<h4 class="title">
+											<h2 class="title">
 												<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-											</h4>
+											</h2>
 											<span class="date"><?php echo get_the_date('F j, Y'); ?></span>
 										</div>
 									</div>
@@ -69,9 +69,9 @@ get_sidebar( 'left' );
 								<div class="next-post">
 									<div class="blog-pagination-post">
 										<div class="post-content">
-											<h4 class="title">
+											<h2 class="title">
 												<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-											</h4>
+											</h2>
 											<span class="date"><?php echo get_the_date('F j, Y'); ?></span>
 										</div>
 										<div class="post-thumb">

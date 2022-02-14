@@ -188,7 +188,7 @@ if ( ! function_exists( 'aeonblock_related_post' ) ) {
 			if ( $count > 1 ) {
 				?>
 				<div class="related-pots-block">
-				<h2 class="widget-title"><?php esc_html_e( 'Related Posts', 'aeonblock' ); ?></h2>
+				<h3 class="widget-title"><?php esc_html_e( 'Related Posts', 'aeonblock' ); ?></h3>
 				<ul class="related-post-entries clear">
 					<?php
 					$aeonblock_cat_post_args = array(

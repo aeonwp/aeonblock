@@ -4,7 +4,7 @@ Theme URI: https://aeonwp.com/aeonblock/
 Author: aeontheme
 Author URI: https://aeonwp.com/
 Description: Simple and clean accessibility ready blog theme. It comes with easy to use customizer based theme options, copyright text, post templates, sidebar options, meta options, featured image option, excerpt length option, read more text, sticky sidebar, font preview and many more. AeonBlock has soft green and blue colors, and many color options. This is a complete WordPress theme for bloggers. It is Schema ready theme. 
-Version: 1.0.0
+Version: 1.0.1
 Tested up to: 5.9
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -752,7 +752,7 @@ a:hover,
 a:focus,
 a:active,
 a:visited {
-	color: #111;
+	color: blue;
 }
 
 .widget a:visited,
@@ -845,7 +845,6 @@ p {
 }
 
 a, button {
-  color: inherit;
   display: inline-block;
   line-height: inherit;
   text-decoration: none;
@@ -857,13 +856,10 @@ a, button, img, input {
   outline: 0;
 }
 
-a:focus, button:focus, img:focus, input:focus {
-  outline: 0;
-}
+
 
 a:focus {
   color: none;
-  outline: none;
   text-decoration: none;
 }
 
@@ -943,12 +939,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 	padding: 15px 20px;
 	font-family: Manrope, sans-serif;
 	font-weight: 700;
-    font-size: 15px;
+	font-size: 15px;
+	color: #4c4d56;
 }
 
 .main-navigation a:focus,
 .main-navigation a:hover {
 	text-decoration: underline;
+	color: #024eb9;
 }
 
 
@@ -1029,6 +1027,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .main-navigation .sub-menu li.menu-item-has-children>a:before {
 	position: absolute;
 	content: '';
+}
+.current-menu-item > a,
+.current-menu-parent > a{
+	color: #024eb9 !important;
 }
 
 /*--------------------------------------------------------------
@@ -1605,8 +1607,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 	border-bottom: 1px solid #eee;
 	overflow: hidden;
 	background: #fff;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	margin-top: 70px;
+	margin-bottom: 20px;
 }
 .archive .page-header .page-title{
 	font-size: 0;
@@ -1621,7 +1624,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .comments-wrapper {
 	display: inline-block;
 	margin-top: 2.5em;
-	padding: 30px;
+	padding: 15px 0
 	background-color: #fff;
 	width: 100%;
 	text-align: left;
@@ -1638,7 +1641,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .comments-wrapper .comment-notes,
 .comments-wrapper .comment-awaiting-moderation {
-	padding: 10px 15px;
+	padding: 10px 0;
 }
 
 .comments-wrapper label {
@@ -1649,11 +1652,23 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .comments-wrapper textarea {
 	width: 100%;
 }
+.comments-wrapper input[type="text"],
+.comments-wrapper input[type="email"],
+.comments-wrapper input[type="url"],
+.comments-wrapper textarea{
+	border: 1px solid transparent;
+	background: #f6f7f9;
+	border-radius: 0;
+}
 
 .comments-title {
 	margin-top: 0;
+	font-size: 20px;
 }
-
+.comment-reply-title {
+    font-size: 20px;
+    margin-top: 20px;
+}
 p[class*='comment-form-'] {
 	margin-bottom: 20px;
 }
@@ -1672,8 +1687,12 @@ p.comment-form-cookies-consent {
 .comment-form .submit {
 	padding: 20px;
 	color: #fff;
+	opacity: 0.7;
 }
-
+.comment-form .submit:hover,
+.comment-form .submit:focus{
+	opacity: 1;
+}
 .comments-wrapper .comment-body {
 	overflow: hidden;
 	border-bottom: 1px solid #ebebeb;
@@ -2322,7 +2341,7 @@ object {
 	text-decoration: none;
 }
 
-.related-pots-block h2 {
+.related-pots-block h3 {
 	text-align: center;
 	font-size: 1.56em;
 }
@@ -2334,8 +2353,10 @@ object {
 }
 
 .related-post-entries .entry-title a{
-	font-size: 1.2em;
-	color: #090d2f;
+	font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #333333;
 }
 
 .related-post-entries li {
@@ -2539,8 +2560,12 @@ object {
   padding: 4px 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  opacity: 0.8;
 }
-
+.single-blog .blog-content .blog-meta .posted-in a:hover,
+.single-blog .blog-content .blog-meta .posted-in a:focus{
+	opacity: 1;
+}
 .single-blog .blog-img .top-meta .date span {
   font-size: 28px;
   line-height: 18px;
@@ -2837,13 +2862,16 @@ object {
     transition: all 0.3s linear;
     letter-spacing: normal;
     padding: 0;
+    opacity: 0.7;
 }
 
 .blog-sidebar .search-form .search-submit:hover {
   background: #024eb9;
   color: #ffffff;
 }
-
+.blog-sidebar .search-form .search-submit:focus{
+	opacity: 1;
+}
 .blog-sidebar .widget-title {
   margin-bottom: 25px;
 }
@@ -3273,7 +3301,6 @@ object {
 .custom-post-pagination .blog-pagination-post .post-content .title {
   font-size: 16px;
   line-height: 24px;
-  font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #333333;
 }

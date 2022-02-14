@@ -26,7 +26,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header">
 		<!-- Start Header Branding -->
 		<div class="site-branding">
 			<?php
