@@ -262,7 +262,7 @@ function aeonblock_scripts() {
 	wp_enqueue_style( 'aeonblock-print-css', get_template_directory_uri() . '/css/print.css', 'print' );
 
 	wp_enqueue_script( 'aeonblock-navigation', get_template_directory_uri() . '/js/navigation.min.js', array( 'jquery' ), '4.6.0', true );
-	wp_enqueue_script( 'aeonblock-main', get_template_directory_uri() . '/js/main.min.js', array( 'jquery' ), '4.5.0', true );
+	wp_enqueue_script( 'aeonblock-main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '4.5.0', true );
 	wp_enqueue_script( 'aeonblock-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
 	if ( get_theme_mod( 'aeonblock-sticky-sidebar', 1 ) == 1 ) {
