@@ -51,6 +51,9 @@ We would love to hear your ideas.
 You can use email us at aeonwpofficial@gmail.com
 
 == Changelog ==
+= 1.0.2 - February 23 2022 =
+* Fixed Accessibility requirements in mobile menu
+
 = 1.0.1 - February 14 2022 =
 * Fixed Accessibility requirements 
 
