@@ -3190,6 +3190,7 @@ object {
   margin-top: 80px;
   overflow: hidden;
   position: relative;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -3318,7 +3319,7 @@ object {
   line-height: 24px;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  color: #838383;
+  color: #666666;
 }
 
 .custom-post-pagination .blog-pagination-post .post-content .date i {
