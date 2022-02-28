@@ -35,8 +35,8 @@ get_sidebar( 'left' );
 				            'include' => $prevPost->ID,
 				        ];
 				        $prevPost = get_posts($args);
-				        foreach ($prevPost as $post) {
-				            setup_postdata($post); ?>
+				        foreach ($prevPost as $mypost) {
+				            setup_postdata($mypost); ?>
 								<div class="previous-post">
 									<div class="blog-pagination-post">
 										<div class="post-thumb">
@@ -64,8 +64,8 @@ get_sidebar( 'left' );
 				            'include' => $nextPost->ID,
 				        ];
 				        $nextPost = get_posts($args);
-				        foreach ($nextPost as $post) {
-				            setup_postdata($post); ?>
+				        foreach ($nextPost as $mypost) {
+				            setup_postdata($mypost); ?>
 								<div class="next-post">
 									<div class="blog-pagination-post">
 										<div class="post-content">

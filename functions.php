@@ -308,7 +308,6 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/customizer-fonts.php';
 require get_template_directory() . '/inc/sanitize-functions.php';
-require get_template_directory() . '/inc/class-customize.php';
 
 /**
  * Custom Function Templates
@@ -338,14 +337,3 @@ if ( ! function_exists( 'aeonblock_breadcrumb_trail' ) ) {
  * Load dynamic css file.
 */
 require get_template_directory() . '/inc/functions/dynamic-css.php';
-
-/**
- * Add theme page.
- */
-require get_template_directory() . '/inc/admin.php';
-
-/**
- * Add upgrade notice.
- */
-require get_template_directory() . '/inc/upgrade-pro.php';
-
