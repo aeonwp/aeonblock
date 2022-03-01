@@ -69,7 +69,15 @@
 		?>
 		</nav><!-- #site-navigation -->
 		<?php
-	}
+	}else{ ?>
+	  <nav id="site-navigation" role="navigation" class="main-navigation">
+		<ul id="main-menu">
+		<?php
+			wp_list_pages(array('depth' => 0, 'title_li' => ''));
+			?>
+		</ul>
+	</nav>
+	<?php }
 	?>
 </header><!-- #masthead -->
 <?php

@@ -51,6 +51,9 @@ We would love to hear your ideas.
 You can use email us at aeonwpofficial@gmail.com
 
 == Changelog ==
+= 1.0.4 - March 01 2022 =
+* Menu fallback when menu missing
+
 = 1.0.3 - February 28 2022 =
 * Fixed Accessibility requirements
 * Removed about page, upgrade link, etc
