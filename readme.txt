@@ -51,6 +51,11 @@ We would love to hear your ideas.
 You can use email us at aeonwpofficial@gmail.com
 
 == Changelog ==
+= 1.0.5 - March 05 2022 =
+* Added upgarde to pro link
+* Changed screenshot
+* Added about page
+
 = 1.0.4 - March 01 2022 =
 * Menu fallback when menu missing
 
@@ -85,7 +90,7 @@ AeonBlock is distributed under the terms of the GNU General Public License v2 or
 * Sanitization Copyright (c) 2015, WordPress Theme Review Team, [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html) https://github.com/WPTRT/code-examples/blob/master/customizer/sanitization-callbacks.php 
 * Keyboard Accessible Dropdown Menus Copyright 2013 Amy Hendrix, Graham Armfield [MIT](https://opensource.org/licenses/MIT) 
   https://github.com/sabreuse/accessible-menus
-* Upgrade Pro notice - ThemeGrill demo Importer plugin - GPL License
 
 == Image License == 
 https://pxhere.com/en/photo/885738 [Creative Commons Zero (CC0) License]
+Screenshot Logo - Self created [CCO License]

@@ -337,3 +337,16 @@ if ( ! function_exists( 'aeonblock_breadcrumb_trail' ) ) {
  * Load dynamic css file.
 */
 require get_template_directory() . '/inc/functions/dynamic-css.php';
+
+/**
+ * Upgrade to pro
+ */
+require get_template_directory() . '/inc/upgrade/class-customize.php';
+
+/**
+ * For Admin Page
+ */
+if ( is_admin() ) {
+	require get_template_directory() . '/inc/about/about.php';
+}
+   
